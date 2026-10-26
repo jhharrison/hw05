@@ -3,6 +3,10 @@ Name: Jae Harrison
 Peers: none
 References: online textbook
 """
+#My biggest problem overall was incorrect formatting
+#For example
+#Typing the error printouts correctly
+#Having the return function be inside the same loop as the other functions
 
 def get_letter():
     """ Use input to ask for and return a valid uppercase letter character. """
@@ -52,7 +56,7 @@ def check_pattern(letter, digit, lst):
                 break
         if found:
             print(word, end=" ") 
-    
+#this was difficult to figure out interms of how to communicate the conditions, but I got there through trial and error    
     print()
 
 #  The function main is INCOMPLETE, you must finish it
