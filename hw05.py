@@ -5,17 +5,19 @@ References: online textbook
 """
 
 def get_letter():
-    """ USe input to ask for and return a valid uppercase letter character. """
+    """ Use input to ask for and return a valid uppercase letter character. """
     while True:
         letter = input("Give me a single uppercase letter: ")
         
         if len(letter) != 1:
             print("Error: input must be a single character.")
             continue
+        
         if letter != "A" and letter != "B" and letter != "C":
             print("Error: You provided the wrong letter.")
             continue       
-    return letter
+    
+        return letter
 
 def get_digit():
     """ Ask for and return a valid digit character. """
@@ -25,11 +27,12 @@ def get_digit():
         if not digit.isdigit():
             print("Error: your input should be only digits.")
             continue
+        
         if digit != "1" and digit != "2" and digit != "3":
             print("Error: digit needs to be in [1,3].")
             continue
     
-    return digit
+        return digit
 
 
 def check_pattern(letter, digit, lst):
