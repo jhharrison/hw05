@@ -10,11 +10,11 @@ def get_letter():
         letter = input("Give me a single uppercase letter: ")
         
         if len(letter) != 1:
-            print("Error: input must be a single character.")
+            print("Error: it needs to be a single character.")
             continue
         
         if letter != "A" and letter != "B" and letter != "C":
-            print("Error: You provided the wrong letter.")
+            print("Error: You provided the wrong character.")
             continue       
     
         return letter
@@ -29,7 +29,7 @@ def get_digit():
             continue
         
         if digit != "1" and digit != "2" and digit != "3":
-            print("Error: digit needs to be in [1,3].")
+            print("Error: a single digit needs to be in [1,3].")
             continue
     
         return digit
